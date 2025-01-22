@@ -38,7 +38,7 @@ namespace EV.Controllers
         {
             StudentViewModel student = new StudentViewModel();
             student.Courses = db.Courses.ToList();
-            student.Modules.Add(new CourseModule() { StudentId = 1 });
+            student.Modules.Add(new CourseModule() { CourseModuleId = 1 });
             return View(student);
 
         }
